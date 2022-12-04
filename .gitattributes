@@ -1,0 +1,12 @@
+*.png filter=lfs diff=lfs merge=lfs -text
+*.dll filter=lfs diff=lfs merge=lfs -text
+*.aar filter=lfs diff=lfs merge=lfs -text
+*.so filter=lfs diff=lfs merge=lfs -text
+Assets/TofAr/TensorFlowLite/Plugins/iOS/TensorFlowLiteC.framework/TensorFlowLiteC filter=lfs diff=lfs merge=lfs -text
+Assets/TofAr/TensorFlowLite/Plugins/iOS/TensorFlowLiteCCoreML.framework/TensorFlowLiteCCoreML filter=lfs diff=lfs merge=lfs -text
+Assets/TofAr/TensorFlowLite/Plugins/iOS/TensorFlowLiteCMetal.framework/TensorFlowLiteCMetal filter=lfs diff=lfs merge=lfs -text
+Assets/TofAr/TofArBody/Plugins/iOS/BodyRecognizer-tflite.framework/BodyRecognizer-tflite filter=lfs diff=lfs merge=lfs -text
+Assets/TofAr/TofArHand/Plugins/iOS/HandRecognizer-tflite.framework/HandRecognizer-tflite filter=lfs diff=lfs merge=lfs -text
+Assets/TofAr/TofAr/Plugins/iOS/senscord.framework/senscord filter=lfs diff=lfs merge=lfs -text
+Assets/TofAr/TensorFlowLite/Plugins/x86_64/tensorflowlite_c.bundle filter=lfs diff=lfs merge=lfs -text
+Assets/TofAr/TofArHand/V0/RealHandModel/IceHand/Epic_BigCloudsSoft/Epic_BigCloudsSoft.cubemap filter=lfs diff=lfs merge=lfs -text

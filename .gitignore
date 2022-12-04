@@ -3,3 +3,5 @@ Temp
 .idea/.idea.tof-demo/.idea
 Logs
 *.sln
+*.csproj
+obj/Debug
