@@ -5,3 +5,4 @@ Logs
 *.sln
 *.csproj
 obj/Debug
+Assets/ExtensionsAssets
