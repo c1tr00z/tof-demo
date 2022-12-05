@@ -12,6 +12,7 @@ using SensCord;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 using UnityEngine.Events;
 using TofAr.V0.Color;
@@ -2441,15 +2442,15 @@ namespace TofAr.V0.Tof
             }
 
 
-            float fxColor = float.Parse(pasteSetting[0]);
-            float fyColor = float.Parse(pasteSetting[1]);
-            float cxColor = float.Parse(pasteSetting[2]);
-            float cyColor = float.Parse(pasteSetting[3]);
+            float fxColor = float.Parse(pasteSetting[0], CultureInfo.InvariantCulture);
+            float fyColor = float.Parse(pasteSetting[1], CultureInfo.InvariantCulture);
+            float cxColor = float.Parse(pasteSetting[2], CultureInfo.InvariantCulture);
+            float cyColor = float.Parse(pasteSetting[3], CultureInfo.InvariantCulture);
 
-            float fxDepth = float.Parse(pasteSetting[4]);
-            float fyDepth = float.Parse(pasteSetting[5]);
-            float cxDepth = float.Parse(pasteSetting[6]);
-            float cyDepth = float.Parse(pasteSetting[7]);
+            float fxDepth = float.Parse(pasteSetting[4], CultureInfo.InvariantCulture);
+            float fyDepth = float.Parse(pasteSetting[5], CultureInfo.InvariantCulture);
+            float cxDepth = float.Parse(pasteSetting[6], CultureInfo.InvariantCulture);
+            float cyDepth = float.Parse(pasteSetting[7], CultureInfo.InvariantCulture);
 
 
             if (!this.useRotation && !this.useTranslation)
@@ -2507,22 +2508,22 @@ namespace TofAr.V0.Tof
             };
             if (this.useRotation)
             {
-                R.a = float.Parse(pasteSetting[8]);
-                R.b = float.Parse(pasteSetting[9]);
-                R.c = float.Parse(pasteSetting[10]);
-                R.d = float.Parse(pasteSetting[11]);
-                R.e = float.Parse(pasteSetting[12]);
-                R.f = float.Parse(pasteSetting[13]);
-                R.g = float.Parse(pasteSetting[14]);
-                R.h = float.Parse(pasteSetting[15]);
-                R.i = float.Parse(pasteSetting[16]);
+                R.a = float.Parse(pasteSetting[8], CultureInfo.InvariantCulture);
+                R.b = float.Parse(pasteSetting[9], CultureInfo.InvariantCulture);
+                R.c = float.Parse(pasteSetting[10], CultureInfo.InvariantCulture);
+                R.d = float.Parse(pasteSetting[11], CultureInfo.InvariantCulture);
+                R.e = float.Parse(pasteSetting[12], CultureInfo.InvariantCulture);
+                R.f = float.Parse(pasteSetting[13], CultureInfo.InvariantCulture);
+                R.g = float.Parse(pasteSetting[14], CultureInfo.InvariantCulture);
+                R.h = float.Parse(pasteSetting[15], CultureInfo.InvariantCulture);
+                R.i = float.Parse(pasteSetting[16], CultureInfo.InvariantCulture);
             }
             Vector T = new Vector { x = 0, y = 0, z = 0 };
             if (this.useTranslation)
             {
-                T.x = float.Parse(pasteSetting[17]);
-                T.y = float.Parse(pasteSetting[18]);
-                T.z = float.Parse(pasteSetting[19]);
+                T.x = float.Parse(pasteSetting[17], CultureInfo.InvariantCulture);
+                T.y = float.Parse(pasteSetting[18], CultureInfo.InvariantCulture);
+                T.z = float.Parse(pasteSetting[19], CultureInfo.InvariantCulture);
             };
 
             var config = new CalibrationSettingsProperty
