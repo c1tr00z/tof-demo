@@ -10,3 +10,7 @@ Assets/TofAr/TofArHand/Plugins/iOS/HandRecognizer-tflite.framework/HandRecognize
 Assets/TofAr/TofAr/Plugins/iOS/senscord.framework/senscord filter=lfs diff=lfs merge=lfs -text
 Assets/TofAr/TensorFlowLite/Plugins/x86_64/tensorflowlite_c.bundle filter=lfs diff=lfs merge=lfs -text
 Assets/TofAr/TofArHand/V0/RealHandModel/IceHand/Epic_BigCloudsSoft/Epic_BigCloudsSoft.cubemap filter=lfs diff=lfs merge=lfs -text
+*.vrm filter=lfs diff=lfs merge=lfs -text
+Assets/TofArSamplesBasic/Body/Models/model01/model01.Meshes/Face.baked.asset filter=lfs diff=lfs merge=lfs -text
+Assets/TofArSamplesBasic/Body/Models/model02/model02.Meshes/Face.baked.asset filter=lfs diff=lfs merge=lfs -text
+Assets/TofArSamplesBasic/Body/Models/model02/model02.Meshes/Hair001.baked.asset filter=lfs diff=lfs merge=lfs -text
