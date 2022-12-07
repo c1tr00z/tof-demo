@@ -36,6 +36,8 @@ namespace SystemFriend.ARTest {
 
         [SerializeField] private float _swipeSpeed = 1;
 
+        [SerializeField] private Vector3 _defaultRotation = Vector3.zero;
+
         #endregion
 
         #region Accessors
@@ -181,7 +183,7 @@ namespace SystemFriend.ARTest {
         }
 
         public void ScheduleTakeImage() {
-            transform.rotation = Quaternion.identity;
+            transform.rotation = Quaternion.Euler(_defaultRotation);
             _takeImage = true;
             StopCoroutine(nameof(C_Rotate));
         }
@@ -192,7 +194,7 @@ namespace SystemFriend.ARTest {
             }
 
             var delta = finger.ScaledDelta;
-            _targetAngles = transform.rotation.eulerAngles + new Vector3(delta.y, delta.x, 0) * _swipeSpeed;
+            _targetAngles = transform.rotation.eulerAngles + new Vector3(delta.x, delta.y, 0) * _swipeSpeed;
             StopCoroutine(nameof(C_Rotate));
             StartCoroutine(nameof(C_Rotate));
         }
