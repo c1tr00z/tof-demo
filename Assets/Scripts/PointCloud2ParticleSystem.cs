@@ -31,7 +31,7 @@ namespace SystemFriend.ARTest {
 
                 _particles[i].position = point;
 
-                var r = Mathf.Min(1, Mathf.Max(0, point.z / 2));
+                var r = Mathf.Min(1, Mathf.Max(0, 1 - point.z / 2));
                 var g = Mathf.Min(1, Mathf.Max(0, (point.y + 1) / 2));
                 var b = Mathf.Min(1, Mathf.Max(0, (point.x + 1) / 2));
 

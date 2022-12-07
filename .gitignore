@@ -6,3 +6,4 @@ Logs
 *.csproj
 obj/Debug
 Assets/ExtensionsAssets
+BuildDateTime.txt
