@@ -18,11 +18,11 @@ namespace SystemFriend.ARTest {
 
         #region Unity Events
 
-        private void OnEnable() {
+        protected virtual void OnEnable() {
             TofArTofManager.OnFrameArrived += OnFrameArrived;
         }
 
-        private void OnDisable() {
+        protected virtual void OnDisable() {
             TofArTofManager.OnFrameArrived -= OnFrameArrived;
         }
 
